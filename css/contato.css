@@ -1,100 +1,86 @@
-body{
-    background-color: #5D6C78;
-}
-h3{
-text-align: center;
-    position: absolute;
-    left: calc(50%);
-    transform: translateX(50%);
-background-color: cadetblue;
-font-size: 40px;
-}
-.navbar{overflow:hidden;
-background-color: #aadfe7 ;}
-
-.navbar a {
-float: left;
-display: block;
-color:rgba(0, 0, 0, 1) ;
-text-align: center;
-padding: 13px 10px;
-text-decoration: none;
-}
-.navbar a :hover{
-    background-color:gold ;
-    color:ghostwhite ;
-}
-header{
-  position: relative;
-  background-color: #3F858C;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-}
-
-header h3{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #000000ff;
-  padding: 10px 0;
-}
-
-.zalando-sans-expanded {
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-    font-size: 40px;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #5D6C78;
+    font-family: Arial, sans-serif;
+}
+
+h3{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #000;
+    z-index: 10; 
+}
+
+
+.navbar{
+    overflow: hidden;
+    background-color: #aadfe7;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    padding: 13px 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* hover corrigido */
+.navbar a:hover{
+    background-color: gold;
+    color: ghostwhite;
+}
+
+.zalando-sans-expanded{
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
 .formulario-campo{
     display: flex;
     flex: 1;
     gap: 16px;
     width: 70%;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin: 16px auto;
     align-items: center;
-
 }
- .formulario-campo label{
+
+.formulario-campo label{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
- }
- .formulario-campo input,
- .formulario-campo select,
- .formulario-campo textarea {
+}
+
+.formulario-campo input,
+.formulario-campo select,
+.formulario-campo textarea{
     width: 300px;
-   justify-self: flex-end;
- }
- button {
-  font-size: 16px;
-  padding: 1em 3.3em;
-  cursor: pointer;
-  transform: perspective(200px) rotateX(15deg);
-  color: white;
-  font-weight: 900;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(
-    0deg,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(70, 135, 252, 1) 100%
-  );
-  box-shadow: rgba(63, 94, 251, 0.2) 0px 40px 29px 0px;
-  will-change: transform;
-  transition: all 0.3s;
-  border-bottom: 2px solid rgba(70, 135, 252, 1);
 }
 
-button:hover {
-  transform: perspective(180px) rotateX(30deg) translateY(2px);
+/* BOTÃO */
+button{
+    display: block;
+    margin: 40px auto 0 auto; /* centraliza e desce um pouco */
+    background-color: #3F858C;
+    padding: 12px 32px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
 }
 
-button:active {
-  transform: perspective(170px) rotateX(36deg) translateY(5px);
-}
